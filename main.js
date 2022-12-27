@@ -1,4 +1,10 @@
-// Segunda pre entrega - Prueba interactiva de recoleccion de objetos y decisiones para un futuro juego
+// Tercera pre entrega - Prueba interactiva de recoleccion de objetos y decisiones para un futuro juego con la adiccion de deteccion de eventos por DOM y estilo html.
+
+// ------> DOM
+const textoHTML = document.getElementById("texto");
+const botonOpciones = document.getElementById("opciones");
+// <-----
+
 
 // -----> OBJETO USUARIO
 const usuario = {
@@ -72,7 +78,7 @@ if (premio == 1) {
 //ADQUIRIR OBJETOS
 let bolsa = prompt("Mientras caminas te encuentras una bolsa tirada, la abres? si/no").toLowerCase();
 
-if (bolsa == "si"){
+if (bolsa == "si") {
     agregarObjeto("manzana");
     agregarObjeto("manzana");
     alert("Adentro de la bolsa habian dos manzanas, las agregas a tu mochila");
@@ -122,7 +128,6 @@ const comprar = (index) => {
         } else {
             // SI EL USUARIO NO TIENE SUFICIENTES MONEDAS
             let elec1 = prompt("Perdon pero no tienes suficientes monedas para comprar ese objeto, quieres ver otro producto? (escribe si o no)");
-
             if (elec1 == "si") {
                 alert(`A ver si hay algo de su gusto!`);
                 mostrarProductos();
